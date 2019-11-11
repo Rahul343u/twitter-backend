@@ -7,9 +7,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(express.static(path.join(__dirname, 'dist/twitter-search')));
+app.use(express.static(path.join(__dirname, 'dist/twiter-search')));
 app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, '/dist/twitter-search/index.html'));
+  res.sendFile(path.join(__dirname, '/dist/twiter-search/index.html'));
 });
 
 var port = process.env.PORT || '3000';
